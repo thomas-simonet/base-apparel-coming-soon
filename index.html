@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+</head>
+<body>
+
+  <main>
+
+    <header class="hero">
+
+      <a href="#content" class="sr-only">Skip to content</a>
+
+      <a href="/">
+        <img src="./assets/images/logo.svg" alt="Base Apparel">
+      </a>
+
+    </header>
+
+    <section class="card-wrapper">
+
+      <article id="content" class="card">
+
+        <div class="card__illustration">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/images/hero-desktop.jpg">
+            <img src="./assets/images/hero-mobile.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing...">
+          </picture>
+        </div>
+
+        <h1 class="card__title">
+          <span class="font-light">We're </span>
+          <span class="font-bold">coming</span>
+          <span class="font-bold">soon</span>
+        </h1>
+
+        <p class="card__desc">
+          <span>Hello fellow shoppers! We're currently building our new fashion store.</span>
+          <span aria-hidden="true">Add your email below to stay up-to-date with announcements and our launch deals.</span>
+        </p>
+
+        <form id="email-form" class="card__form" action="#" method="post" novalidate>
+
+          <fieldset>
+
+            <legend class="sr-only">Add your email below to stay up-to-date with announcements and our launch deals.</legend>
+
+            <div class="form-group">
+
+              <input 
+                type="email"
+                name="email"
+                id="email"
+                aria-label="Your email address"
+                placeholder="Email Address"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                required
+                aria-required="true"
+                aria-describedby="invalid-email-address"
+              >
+
+              <div class="icon-error"><img src="./assets/images/icon-error.svg" alt="" aria-hidden="true"></div>
+
+              <button type="submit">
+                <img src="./assets/images/icon-arrow.svg" alt="" aria-hidden="true">
+                <span class="sr-only">Submit</span>
+              </button>
+
+            </div>
+
+            <div class="error-group">
+                <a id="invalid-email-address" href="#email"></a>
+            </div>
+
+          </fieldset>
+
+        </form>
+
+      </article>
+
+    </section>
+
+  </main>
+  
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.<br>
+      Coded by <a href="#">Thomas Simonet</a>.
+    </p>
+  </footer>
+
+  <script src="./assets/js/app.js"></script>
+
+</body>
+</html>
